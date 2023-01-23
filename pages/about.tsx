@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const About = ()=>{
     return(
-        <div className='mx-5'>
+        <div className='m-5'>
             <div className='flex justify-between'>
                 <div className='text-[4vw] font-semibold w-1/3'>О НАС</div>
                 <div className="flex justify-end w-1/2">

@@ -11,7 +11,7 @@ export const Menu: IMenuLink[] = [
 	},
 	{
 		name: 'O нас',
-		link: '/about-us',
+		link: '/about',
 	},
 	{
 		name: 'Контакты',
