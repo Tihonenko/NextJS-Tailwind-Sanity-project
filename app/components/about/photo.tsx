@@ -1,18 +1,16 @@
 import Image from 'next/image';
+import styles from './about.module.scss'
 
 const Photo_about = () =>{
     return(
-        <>
-        <div className="mt-10">
+        <div className={styles.photo}>
                 <Image src='/images/about.png'
                 alt='photo'
-                className='w-full '
+                className={styles.img}
                 width={1360}
                 height={510}
                 />
         </div>
-        
-        </>
     )
 }
 

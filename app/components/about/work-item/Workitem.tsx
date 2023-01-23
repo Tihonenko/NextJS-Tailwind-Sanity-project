@@ -1,19 +1,21 @@
 import { FC } from 'react';
 import Image from 'next/image';
 import { IWorkCont } from './work-cont.interface';
+import styles from '../about.module.scss'
 
 interface IWorkItem {
 	item: IWorkCont;
 }
+
 const Work_item:FC<IWorkItem> = ({item}) =>{
     return(
-        <div className="flex-col flex  items-center w-1/6 text-[1vw]">
+        <div className={styles.item}>
                     <Image src={item.link}
                     alt={item.name}
                     width={item.iconw}
                     height={item.iconh}
                     />
-                    <p className='mt-5 text-center'>{item.text}</p>
+                    <p className={styles.text}>{item.text}</p>
                 </div>
     )
 }
