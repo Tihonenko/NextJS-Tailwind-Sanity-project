@@ -1,0 +1,19 @@
+.content {
+	@apply container mb-4 flex justify-start md:justify-between;
+}
+
+.list {
+	@apply hidden gap-8 md:flex lg:gap-12;
+}
+
+.social {
+	@apply flex;
+}
+
+.social_item {
+	@apply p-3;
+
+	&:hover {
+		@apply cursor-pointer bg-[#F14F94];
+	}
+}
