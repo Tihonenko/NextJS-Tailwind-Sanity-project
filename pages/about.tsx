@@ -1,15 +1,13 @@
-import PhotoAbout from '../app/components/about/Photo';
-import HeroAbout from '../app/components/about/Hero';
-import WorkAbout from '../app/components/about/Work';
+import Photo_about from '../app/components/about/photo';
+import Hero_about from '../app/components/about/hero';
+import Work_about from '../app/components/about/work';
 
 const About = ()=>{
     return(
         <div className='container'>
-            <HeroAbout/>
-            <PhotoAbout/>
-            <WorkAbout/>
+            <Hero_about/>
+            <Photo_about/>
+            <Work_about/>
         </div>
     )
 }
-
-export default About

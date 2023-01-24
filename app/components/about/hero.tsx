@@ -1,5 +1,6 @@
-import styles from './about.module.scss'
+import styles from './about.module.scss';
 
+<<<<<<< HEAD
 const HeroAbout = () =>{
     return(
         <section className={styles.hero}>
@@ -18,3 +19,25 @@ const HeroAbout = () =>{
 }
 
 export default HeroAbout
+=======
+const Hero_about = () => {
+	return (
+		<div className={styles.hero}>
+			<div className={styles.h}>О НАС</div>
+			<div className={styles.text}>
+				<div className={styles.div1}>
+					Международное модельное агенство , ориентированное на поиск, развитие
+					и плэйсмент молодых начинающих моделей в лучшие модельные агенства
+					Европы, Америки и Азии.
+				</div>
+				<div className={styles.div2}>
+					Сотрудничая с Modelpublic, ты доверяешь свою карьеру профессионалам, с
+					опытом работы более 14 лет.
+				</div>
+			</div>
+		</div>
+	);
+};
+
+export default Hero_about;
+>>>>>>> defb6b11dda98c9bd21eaaefd41a6a640bb036fd
