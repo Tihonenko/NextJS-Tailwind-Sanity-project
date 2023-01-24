@@ -1,3 +1,6 @@
+.conteiner {
+  width: 400px;
+}
 .hero {
   @apply flex justify-between;
   .h {
@@ -27,12 +30,41 @@
     @apply h-[1px] bg-slate-300;
   }
   .box {
-    @apply mt-10 flex h-[13vw] justify-between;
+    @apply mt-10 flex  justify-between;
   }
 }
 .item {
   @apply flex w-1/6  flex-col items-center text-[1vw];
   .text {
     @apply mt-5 text-center;
+  }
+}
+@media (max-width: 426px) {
+  .hero {
+    @apply block;
+    .h {
+      @apply w-full text-8xl;
+    }
+    .text {
+      @apply block w-full;
+      .div1,
+      .div2 {
+        @apply ml-0 w-full text-3xl;
+      }
+    }
+  }
+  .work {
+    .box {
+      @apply block;
+    }
+  }
+  .item {
+    @apply w-full;
+    .image {
+      @apply h-20 w-20;
+    }
+    p {
+      @apply text-3xl;
+    }
   }
 }

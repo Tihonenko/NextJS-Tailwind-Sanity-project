@@ -7,16 +7,17 @@ interface IWorkItem {
 	item: IWorkCont;
 }
 
-const Work_item:FC<IWorkItem> = ({item}) =>{
+const WorkItem:FC<IWorkItem> = ({item}) =>{
     return(
         <div className={styles.item}>
                     <Image src={item.link}
                     alt={item.name}
                     width={item.iconw}
                     height={item.iconh}
+                    className={styles.image}
                     />
                     <p className={styles.text}>{item.text}</p>
                 </div>
     )
 }
-export default Work_item
+export default WorkItem

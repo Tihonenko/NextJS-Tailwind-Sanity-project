@@ -1,6 +1,6 @@
 import styles from './about.module.scss'
 
-const Hero_about = () =>{
+const HeroAbout = () =>{
     return(
         <section className={styles.hero}>
         <div className={styles.h}>О НАС</div>
@@ -17,4 +17,4 @@ const Hero_about = () =>{
     )
 }
 
-export default Hero_about
+export default HeroAbout

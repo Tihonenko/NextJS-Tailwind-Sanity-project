@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './about.module.scss'
 
-const Photo_about = () =>{
+const PhotoAbout = () =>{
     return(
         <div className={styles.photo}>
                 <Image src='/images/about.png'
@@ -14,4 +14,4 @@ const Photo_about = () =>{
     )
 }
 
-export default Photo_about
+export default PhotoAbout
