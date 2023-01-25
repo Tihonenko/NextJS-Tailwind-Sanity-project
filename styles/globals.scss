@@ -2,8 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-	.container {
-		@apply w-[1400px];
-	}
+@font-face {
+	font-family: Helvetica-Bold;
+	src: url('/fonts/HelveticaNeueCyr-Bold.woff2'), format('woff2');
+	font-weight: bold;
+	font-style: normal;
 }
+@font-face {
+	font-family: Helvetica-Roman;
+	src: url('/fonts/HelveticaNeueCyr-Roman.woff2'), format('woff2');
+}
+@font-face {
+	font-family: Helvetica-Medium;
+	src: url('/fonts/HelveticaNeueCyr-Medium.woff2'), format('woff2');
+}
+
+@layer components {
+}
+
+// @layer base {
+// 	h1 > span {
+// 		font-family: Helvetica-Roman;
+// 	}
+// }

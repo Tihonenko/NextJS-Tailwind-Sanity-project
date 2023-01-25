@@ -1,8 +1,12 @@
 import type { NextPage } from 'next';
-import Header from '../app/components/header/Header';
+import { Hero } from '../app/components/home-page/';
 
 const Home: NextPage = () => {
-	return <div>HEllO WORLD!!</div>;
+	return (
+		<>
+			<Hero />
+		</>
+	);
 };
 
 export default Home;

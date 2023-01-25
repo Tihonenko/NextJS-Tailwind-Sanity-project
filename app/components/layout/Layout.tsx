@@ -1,6 +1,7 @@
 import { FC, ReactNode } from 'react';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
+import { helvetica, inter } from './font.variable';
 
 interface ILayoutProps {
 	children?: ReactNode;
@@ -9,9 +10,11 @@ interface ILayoutProps {
 const Layout: FC<ILayoutProps> = ({ children }) => {
 	return (
 		<>
-			<Header />
-			<main className='min-h-screen'>{children}</main>
-			<Footer />
+			<Header font={inter.variable} />
+			<main className={`${inter.variable} ${helvetica.variable} min-h-screen`}>
+				{children}
+			</main>
+			<Footer font={inter.variable} />
 		</>
 	);
 };
