@@ -40,7 +40,6 @@ const BurgerMenu = () => {
 				</button>
 				<ul>
 					{Menu.map((item, i) => (
-						// <MenuItem item={item} key={item.link} />
 						<motion.li
 							initial='hidden'
 							animate={isOpen ? 'open' : 'close'}
@@ -64,11 +63,11 @@ const BurgerMenu = () => {
 									},
 								},
 							}}
-							// exit={{ transform: 'translateX(5rem)', opacity: 0 }}
-							// transition={itemTransition}
 							key={i}
 						>
-							<Link href={item.link}>{item.name}</Link>
+							<Link onClick={() => setOpen((prev) => !prev)} href={item.link}>
+								{item.name}
+							</Link>
 						</motion.li>
 					))}
 				</ul>
