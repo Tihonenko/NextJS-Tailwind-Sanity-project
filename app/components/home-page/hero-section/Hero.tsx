@@ -1,6 +1,6 @@
+import RoundBtn from '@UI/round-btn/RoundBtn';
+import { socialLink } from '@app/data/social.data';
 import Link from 'next/link';
-import RoundBtn from '../../UI/round-btn/RoundBtn';
-import { socialLink } from '../../../data/social.data';
 
 import styles from './hero.module.scss';
 import SocialItem from './social-item/SocialItem';
@@ -24,7 +24,9 @@ const Hero = () => {
 				</RoundBtn>
 			</div>
 			<div className={styles.info}>
-				<div className={styles.info_left}>Международное модельное агенство</div>
+				<div className={styles.info_left}>
+					Международное модельное агенство
+				</div>
 				<div className={styles.info_right}>
 					<ul>
 						{socialLink.map((item) => (

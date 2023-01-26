@@ -1,18 +1,14 @@
 .content {
 	@apply flex min-h-screen w-full flex-col justify-between bg-[url('/images/home-page/mobile-banner.png')] bg-cover
 	bg-no-repeat pb-5 text-white md:bg-[url('/images/home-page/banner.png')];
-
-	// background-image: url('/images/home-page/banner.png');
-	// background-size: cover;
-	// background-repeat: no-repeat;
 }
 
 .center {
-	@apply container items-center pt-[180px] md:flex md:justify-between;
+	@apply container flex flex-col items-center gap-10 pt-28  md:flex-row md:justify-between md:pt-[11.25rem];
 }
 
 .title_desktop {
-	@apply hidden font-Helvetica text-6xl font-normal sm:text-9xl xmd:block lg:block lg:text-[8.75rem];
+	@apply hidden text-start font-Helvetica text-6xl font-normal sm:text-9xl xmd:block lg:block lg:text-[8.75rem];
 
 	& > span {
 		@apply mr-11 text-xs lg:mr-32 lg:text-xl;
@@ -20,10 +16,10 @@
 }
 
 .title_mobile {
-	@apply flex flex-col text-6xl sm:text-9xl xmd:hidden;
+	@apply flex flex-col text-6xl sm:text-8xl xmd:hidden;
 
 	& > span:nth-child(1) {
-		@apply text-xs md:translate-x-2 md:text-xl;
+		@apply text-xs sm:translate-x-1 md:translate-x-3;
 	}
 	& > span:nth-child(3) {
 		@apply ml-28;

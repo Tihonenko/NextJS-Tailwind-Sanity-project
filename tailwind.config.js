@@ -1,3 +1,4 @@
+const plugin = require('tailwindcss/plugin');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
@@ -14,7 +15,10 @@ module.exports = {
 			},
 			container: {
 				center: true,
-				padding: '20px',
+				padding: {
+					DEFAULT: '0.5rem',
+					md: '1.25rem',
+				},
 			},
 			fontFamily: {
 				Inter: 'var(--font-inter), serif',
@@ -26,5 +30,13 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [
+		plugin(function ({ addComponents, theme }) {
+			addComponents({
+				// '.slider-container': {
+				// 	marginLeft: (100 % -theme('screens.md')) / 2 + '40px',
+				// },
+			});
+		}),
+	],
 };

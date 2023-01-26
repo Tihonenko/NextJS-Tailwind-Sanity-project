@@ -1,10 +1,11 @@
+import { Hero, News } from '@components/home-page/';
 import type { NextPage } from 'next';
-import { Hero } from '../app/components/home-page/';
 
 const Home: NextPage = () => {
 	return (
 		<>
 			<Hero />
+			<News />
 		</>
 	);
 };
