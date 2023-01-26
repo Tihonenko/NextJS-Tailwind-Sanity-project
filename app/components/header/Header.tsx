@@ -1,13 +1,10 @@
 import Image from 'next/image';
-import { Menu } from './header.data';
+
 import Logo from './Logo';
+import BurgerMenu from './burger-menu/BurgerMenu';
+import { Menu } from './header.data';
 import styles from './header.module.scss';
 import MenuItem from './menu-item/MenuItem';
-import BurgerMenu from './burger-menu/BurgerMenu';
-<<<<<<< HEAD
-=======
-import { FC } from 'react';
->>>>>>> home-page
 
 interface IHeaderProps {
 	font: string;
@@ -15,12 +12,7 @@ interface IHeaderProps {
 
 const Header: FC<IHeaderProps> = ({ font }) => {
 	return (
-<<<<<<< HEAD
-		
-=======
-		<header className={`${styles.header}  ${font} `}>
-			<Logo fill='#141313' />
->>>>>>> home-page
+		<header className={`${styles.header} `}>
 			<nav className={styles.header_nav}>
 				<ul>
 					{Menu.map((item) => (
@@ -38,10 +30,7 @@ const Header: FC<IHeaderProps> = ({ font }) => {
 				/>
 				Fallen Greatness
 			</button>
-<<<<<<< HEAD
-=======
-			
->>>>>>> home-page
+			<BurgerMenu />
 		</header>
 	);
 };
