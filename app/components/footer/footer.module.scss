@@ -1,5 +1,5 @@
 .content {
-	@apply container mb-4 flex justify-start md:justify-between;
+	@apply container mb-4 flex items-center justify-start font-Inter md:justify-between;
 }
 
 .list {
@@ -14,6 +14,6 @@
 	@apply p-3;
 
 	&:hover {
-		@apply cursor-pointer bg-[#F14F94];
+		@apply cursor-pointer bg-pink;
 	}
 }

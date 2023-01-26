@@ -1,10 +1,10 @@
 import { FC } from 'react';
-import { ISocialLink } from './social.interface';
+import { ISocial } from '../../../types/social.interface';
 import Link from 'next/link';
 import styles from '../footer.module.scss';
 
 interface ISocialItem {
-	item: ISocialLink;
+	item: ISocial;
 }
 
 const SocialItem: FC<ISocialItem> = ({ item }) => {
