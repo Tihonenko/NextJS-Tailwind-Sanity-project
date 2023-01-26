@@ -27,6 +27,7 @@ module.exports = {
 			colors: {
 				white: '#ECECEC',
 				pink: '#F14F94',
+				lightgray: '#4B4B4B',
 			},
 		},
 	},

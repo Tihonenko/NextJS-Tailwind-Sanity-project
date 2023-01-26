@@ -1,6 +1,5 @@
 import RoundBtn from '@UI/round-btn/RoundBtn';
 import { socialLink } from '@app/data/social.data';
-import Link from 'next/link';
 
 import styles from './hero.module.scss';
 import SocialItem from './social-item/SocialItem';
@@ -19,7 +18,7 @@ const Hero = () => {
 					<span> MODEL </span>
 					<span> PUBLIC. </span>
 				</h1>
-				<RoundBtn>
+				<RoundBtn link='/become'>
 					Стать <br /> моделью
 				</RoundBtn>
 			</div>

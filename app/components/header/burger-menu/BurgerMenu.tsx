@@ -1,11 +1,12 @@
-import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
-import MenuItem from '../menu-item/MenuItem';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Menu } from '../header.data';
-
-import styles from '../header.module.scss';
 import Link from 'next/link';
+import { useState } from 'react';
+
+import { Menu } from '../header.data';
+import styles from '../header.module.scss';
+import MenuItem from '../menu-item/MenuItem';
+
 import { itemVariant, menuTransition, menuVariant } from './variant';
 
 const BurgerMenu = () => {
@@ -17,7 +18,12 @@ const BurgerMenu = () => {
 				className={styles.header_menu}
 				onClick={() => setOpen((prev) => !prev)}
 			>
-				<Image src='/images/svg/menu.svg' width={20} height={13} alt='menu' />
+				<Image
+					src='/images/svg/menu.svg'
+					width={20}
+					height={13}
+					alt='menu'
+				/>
 			</button>
 
 			{/* <AnimatePresence> */}
@@ -65,7 +71,10 @@ const BurgerMenu = () => {
 							}}
 							key={i}
 						>
-							<Link onClick={() => setOpen((prev) => !prev)} href={item.link}>
+							<Link
+								onClick={() => setOpen((prev) => !prev)}
+								href={item.link}
+							>
 								{item.name}
 							</Link>
 						</motion.li>

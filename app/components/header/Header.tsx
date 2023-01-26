@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { FC } from 'react';
 
 import Logo from './Logo';
@@ -14,6 +15,9 @@ interface IHeaderProps {
 const Header: FC<IHeaderProps> = ({ font }) => {
 	return (
 		<header className={`${styles.header} ${font} `}>
+			<Link href='/'>
+				<Logo fill='#141313' />
+			</Link>
 			<nav className={styles.header_nav}>
 				<ul>
 					{Menu.map((item) => (

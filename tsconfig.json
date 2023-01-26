@@ -18,6 +18,7 @@
 		"paths": {
 			"@components/*": ["app/components/*"],
 			"@UI/*": ["app/components/UI/*"],
+			"@data/*": ["app/data/*"],
 			"@app/*": ["app/*"],
 			"@/*": ["./*"]
 		}

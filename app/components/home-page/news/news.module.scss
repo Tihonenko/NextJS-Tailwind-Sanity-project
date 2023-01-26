@@ -1,5 +1,5 @@
 .news {
-	@apply mt-[4.375rem] md:mt-[8.75rem];
+	@apply mt-[4.375rem] font-Inter md:mt-[8.75rem];
 }
 
 .title {
@@ -16,4 +16,24 @@
 
 .slide_navigation {
 	@apply hidden gap-4 md:flex;
+}
+
+.item {
+	@apply mt-7;
+
+	& > h6 {
+		@apply text-xs text-lightgray xmd:text-base;
+	}
+
+	& > img {
+		@apply mt-3;
+	}
+
+	& > h2 {
+		@apply mt-3 text-base font-semibold uppercase xmd:text-2xl;
+	}
+
+	& > p {
+		@apply mt-1 text-sm uppercase xmd:text-lg;
+	}
 }

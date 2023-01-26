@@ -1,10 +1,13 @@
+import { newsPost } from '@data/news.data';
 import { FC, useRef } from 'react';
 import { FreeMode, Navigation } from 'swiper';
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 
 import styles from '../news.module.scss';
+
+import SlideItem from './SlideItem';
 
 interface ISlideProps {
 	prevEl: any;
@@ -17,19 +20,42 @@ const Slider: FC = () => {
 				loop={true}
 				modules={[FreeMode, Navigation]}
 				spaceBetween={30}
-				slidesPerView={3.5}
-				// style={{ cursor: 'move' }}
+				slidesPerView='auto'
+				speed={700}
+				direction='horizontal'
 				className={styles.slider}
+				breakpoints={{
+					320: {
+						slidesPerView: 1.5,
+					},
+					640: {
+						slidesPerView: 2,
+					},
+					834: {
+						slidesPerView: 3,
+					},
+					1024: {
+						slidesPerView: 3.5,
+					},
+					1400: {
+						slidesPerView: 3.5,
+					},
+				}}
 				navigation={{
 					nextEl: '#next-slide-news',
 					prevEl: '#prev-slide-news',
 				}}
 			>
-				<SwiperSlide>Slide 1</SwiperSlide>
+				{newsPost.map((item, idx) => (
+					<SwiperSlide key={idx}>
+						<SlideItem item={item} />
+					</SwiperSlide>
+				))}
+				{/* <SwiperSlide>Slide 1</SwiperSlide>
 				<SwiperSlide>Slide 2</SwiperSlide>
 				<SwiperSlide>Slide 3</SwiperSlide>
 				<SwiperSlide>Slide 4</SwiperSlide>
-				<SwiperSlide>Slide 5</SwiperSlide>
+				<SwiperSlide>Slide 5</SwiperSlide> */}
 			</Swiper>
 		</>
 	);
