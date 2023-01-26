@@ -3,9 +3,8 @@ import { Menu } from './header.data';
 import Logo from './Logo';
 import styles from './header.module.scss';
 import MenuItem from './menu-item/MenuItem';
-<<<<<<< HEAD
-import Link from 'next/link';
 import BurgerMenu from './burger-menu/BurgerMenu';
+<<<<<<< HEAD
 =======
 import { FC } from 'react';
 >>>>>>> home-page
@@ -17,7 +16,6 @@ interface IHeaderProps {
 const Header: FC<IHeaderProps> = ({ font }) => {
 	return (
 <<<<<<< HEAD
-		<header className={`${styles.header} `}>
 		
 =======
 		<header className={`${styles.header}  ${font} `}>
@@ -41,11 +39,8 @@ const Header: FC<IHeaderProps> = ({ font }) => {
 				Fallen Greatness
 			</button>
 <<<<<<< HEAD
-			<BurgerMenu />
 =======
-			<button className={styles.header_menu}>
-				<Image src='/images/svg/menu.svg' width={20} height={13} alt='menu' />
-			</button>
+			
 >>>>>>> home-page
 		</header>
 	);
