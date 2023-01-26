@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { FC } from 'react';
 
 import Logo from './Logo';
 import BurgerMenu from './burger-menu/BurgerMenu';
@@ -12,7 +13,7 @@ interface IHeaderProps {
 
 const Header: FC<IHeaderProps> = ({ font }) => {
 	return (
-		<header className={`${styles.header} `}>
+		<header className={`${styles.header} ${font} `}>
 			<nav className={styles.header_nav}>
 				<ul>
 					{Menu.map((item) => (
