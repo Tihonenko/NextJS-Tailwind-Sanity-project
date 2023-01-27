@@ -7,18 +7,21 @@
 		}
 	}
 	.main {
-		@apply flex-col justify-between md:flex md:w-1/2;
+		@apply flex flex-col items-center justify-between md:w-1/2 md:items-start;
 		.h {
-			@apply m-3 text-5xl font-medium;
+			@apply my-3 text-center text-5xl font-medium md:text-start;
 		}
 		.text {
-			@apply w-3/4 text-justify;
+			@apply text-center md:w-3/4 md:text-justify;
 		}
 		.write {
-			@apply flex h-32 w-32 items-center justify-center rounded-[50%] border-[1px] text-center text-lg;
+			@apply my-5 flex h-32 w-32 items-center justify-center rounded-[50%] border-[1px] text-center text-lg;
 		}
 		.boxmail {
-			@apply items-end justify-between md:flex;
+			@apply w-full items-end justify-between md:flex;
+			.foto {
+				@apply hidden md:block;
+			}
 		}
 	}
 }
