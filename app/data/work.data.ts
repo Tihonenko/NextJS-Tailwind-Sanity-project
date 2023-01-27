@@ -1,4 +1,4 @@
-import { IWorkCont } from "./work-item/work-cont.interface";
+import { IWorkCont } from "../types/work.interface";
 
 export const Work: IWorkCont[] = [
 	{

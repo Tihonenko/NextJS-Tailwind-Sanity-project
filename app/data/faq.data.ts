@@ -1,4 +1,4 @@
-import { IPostCont } from "./post/post.interface";
+import { IPostCont } from "../types/faq.interface";
 
 export const Postdata: IPostCont[]=[
     {

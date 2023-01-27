@@ -1,6 +1,6 @@
 import styles from './faq.module.scss'
-import Post from './post/post'
-import { Postdata } from './posts.data'
+import Post from './post'
+import { Postdata } from '../../data/faq.data'
 
 const Posts = () => {
   return (

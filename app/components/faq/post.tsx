@@ -1,10 +1,11 @@
 import {FC} from 'react'
-import {IPostCont} from './post.interface'
-import styles from '../faq.module.scss'
+import {IPostCont} from '../../types/faq.interface'
+import styles from './faq.module.scss'
 
 interface Ipost{
     post:IPostCont;
 }
+
 
 const Post:FC<Ipost> = ({post}) => {
   return (

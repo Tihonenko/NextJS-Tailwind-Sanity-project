@@ -1,5 +1,5 @@
-import { Work } from "./Work.data"
-import WorkItem from "./work-item/workItem"
+import { Work } from "../../data/work.data"
+import WorkItem from "./Workitem"
 import styles from './about.module.scss'
 
 

@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import Image from 'next/image';
-import { IWorkCont } from './work-cont.interface';
-import styles from '../about.module.scss'
+import { IWorkCont } from '../../types/work.interface';
+import styles from './about.module.scss'
 
 interface IWorkItem {
 	item: IWorkCont;
