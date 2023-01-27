@@ -1,11 +1,11 @@
-import { Work } from "../../data/work.data"
-import WorkItem from "./Workitem"
+import { Work } from "./work.data"
+import WorkItem from "./work-item/workItem"
 import styles from './about.module.scss'
 
 
 const WorkAbout=()=>{
     return(
-        <div className={styles.work}>
+        <section className={styles.work}>
         <div className={styles.h}>
                 Наша работа это 
         </div>
@@ -16,7 +16,7 @@ const WorkAbout=()=>{
 						<WorkItem item={item} key={item.link} />
 					))}
             </div>
-            </div>
+            </section>
     )
 }
 

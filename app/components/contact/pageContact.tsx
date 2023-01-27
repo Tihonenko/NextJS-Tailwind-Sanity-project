@@ -5,7 +5,7 @@ import Image from 'next/image'
 const PageContact = () => {
   return (
     <section className={styles.contact}>
-        <div className={styles.mainfoto}>
+        <div className={styles.mainimg}>
             <Image
                 src='/images/contact.png'
                 alt='foto'
@@ -25,13 +25,12 @@ const PageContact = () => {
             <div className={styles.write}>HАПИСАТЬ НАМ</div>
             <div className={styles.boxmail}>
                 <div className={styles.mail}>CHERIEMODELS@GMAIL.COM</div>
-                <div className={styles.foto}>
+                <div className={styles.img}>
                 <Image
                     src='/images/contact.png'
                     alt='foto'
                     width={100}
                     height={200}
-                    className={styles.img}
                 />
                 </div>
             </div>

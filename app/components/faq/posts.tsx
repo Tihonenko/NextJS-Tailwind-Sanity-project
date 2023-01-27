@@ -1,14 +1,14 @@
 import styles from './faq.module.scss'
-import Post from './post'
-import { Postdata } from '../../data/faq.data'
+import Post from './post/post'
+import { Postdata } from './faq.data'
 
 const Posts = () => {
   return (
-    <div className={styles.posts}>
+    <section className={styles.posts}>
         {Postdata.map((post) => (
 						<Post post={post} key={post.id} />
 					))}
-    </div>
+    </section>
   )
 }
 

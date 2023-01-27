@@ -4,11 +4,11 @@ import WorkAbout from '../app/components/about/work';
 
 const About = ()=>{
     return(
-        <div className='container'>
+        <>
             <HeroAbout/>
             <PhotoAbout/>
             <WorkAbout/>
-        </div>
+        </>
     )
 }
 

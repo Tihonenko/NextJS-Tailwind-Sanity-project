@@ -1,6 +1,6 @@
 .contact {
-	@apply mt-5 justify-center gap-5 md:flex;
-	.mainfoto {
+	@apply container mt-5 justify-center gap-5 md:flex;
+	.mainimg {
 		@apply md:w-1/3;
 		.img {
 			@apply w-full;
