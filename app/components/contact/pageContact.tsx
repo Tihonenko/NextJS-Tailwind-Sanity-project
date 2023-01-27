@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const PageContact = () => {
   return (
-    <div className={styles.contact}>
+    <section className={styles.contact}>
         <div className={styles.mainfoto}>
             <Image
                 src='/images/contact.png'
@@ -16,11 +16,11 @@ const PageContact = () => {
         </div>
         <div className={styles.main}>
             <div>
-                <div className={styles.h}>КОНТАКТЫ</div>
-                <div className={styles.text}>Все встречи с новыми моделями мы проводим в формате зума.
+                <h1 className={styles.h}>КОНТАКТЫ</h1>
+                <p className={styles.text}>Все встречи с новыми моделями мы проводим в формате зума.
                     После звонка мы можем пригласить вас на просмотр и пробные снепы, которые мы проводим
                     в центральных фотостудиях, либо co-working пространствах Москвы.
-                </div>
+                </p>
             </div>
             <div className={styles.write}>HАПИСАТЬ НАМ</div>
             <div className={styles.boxmail}>
@@ -36,7 +36,7 @@ const PageContact = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 
