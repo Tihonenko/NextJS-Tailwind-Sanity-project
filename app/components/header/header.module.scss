@@ -1,17 +1,28 @@
 .header {
-  @apply mt-5 flex items-center justify-between border-b-2 pb-5;
+	@apply container mt-5 flex items-center justify-between gap-3 border-b-2 pb-5 font-Inter md:text-sm;
 
-  &_fallen {
-    @apply hidden md:block;
-  }
+	&_fallen {
+		@apply hidden md:block;
+	}
 
-  &_menu {
-    @apply md:hidden;
-  }
+	&_menu {
+		@apply md:hidden;
+	}
 
-  &_nav {
-    & > ul {
-      @apply hidden gap-11 md:flex;
-    }
-  }
+	&_nav {
+		& > ul {
+			@apply hidden gap-6 md:flex md:gap-11;
+		}
+	}
+}
+
+.menu {
+	@apply absolute top-[92px] left-0 z-10 h-full w-full bg-[#fff] py-5 px-10 opacity-0;
+
+	& > button {
+	}
+
+	& > ul {
+		@apply mt-12 flex flex-col gap-6;
+	}
 }

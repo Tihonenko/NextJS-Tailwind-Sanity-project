@@ -1,13 +1,18 @@
+import { FC } from 'react';
 import { Menu } from '../header/header.data';
 import MenuItem from '../header/menu-item/MenuItem';
 
 import styles from './footer.module.scss';
 import SocialItem from './social-item/SocialItem';
-import { social } from './social.data';
+import { social } from '../../data/social.data';
 
-const Footer = () => {
+interface IFooterProps {
+	font: string;
+}
+
+const Footer: FC<IFooterProps> = ({ font }) => {
 	return (
-		<footer className={styles.content}>
+		<footer className={`${styles.content} ${font}  `}>
 			<ul className={styles.list}>
 				{Menu.map((item) => (
 					<MenuItem item={item} key={item.link} />

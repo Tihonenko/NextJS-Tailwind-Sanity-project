@@ -1,0 +1,8 @@
+.btn {
+	@apply rounded-[50%] border-[1px] px-6 py-11 text-center font-Inter text-[15px] font-medium uppercase;
+
+	&:hover {
+		@apply border-black/70 bg-black/70 transition-colors duration-700 ease-out;
+	}
+	@apply transition-colors duration-700 ease-out;
+}

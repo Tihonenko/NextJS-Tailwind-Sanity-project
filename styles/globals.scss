@@ -1,9 +1,52 @@
+@config "../tailwind.config.js";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .container {
-    @apply w-[1400px];
-  }
+@font-face {
+	font-family: Helvetica-Bold;
+	src: url('/fonts/HelveticaNeueCyr-Bold.woff2'), format('woff2');
+	font-weight: bold;
+	font-style: normal;
 }
+@font-face {
+	font-family: Helvetica-Roman;
+	src: url('/fonts/HelveticaNeueCyr-Roman.woff2'), format('woff2');
+}
+@font-face {
+	font-family: Helvetica-Medium;
+	src: url('/fonts/HelveticaNeueCyr-Medium.woff2'), format('woff2');
+}
+
+@layer components {
+	.slider_container {
+		@media (min-width: 320px) {
+			margin-left: calc((100% - 320px) / 2 + 20px);
+		}
+		@media (min-width: 640px) {
+			margin-left: calc((100% - 640px) / 2 + 20px);
+		}
+		@media (min-width: 768px) {
+			margin-left: calc((100% - 768px) / 2 + 20px);
+		}
+		@media (min-width: 834px) {
+			margin-left: calc((100% - 834px) / 2 + 20px);
+		}
+		@media (min-width: 1024px) {
+			margin-left: calc((100% - 1024px) / 2 + 20px);
+		}
+		@media (min-width: 1280px) {
+			margin-left: calc((100% - 1280px) / 2 + 20px);
+		}
+		@media (min-width: 1400px) {
+			margin-left: calc((100% - 1400px) / 2 + 20px);
+		}
+	}
+}
+
+// @layer base {
+// 	h1 > span {
+// 		font-family: Helvetica-Roman;
+// 	}
+// }
