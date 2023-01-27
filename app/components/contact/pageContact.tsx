@@ -9,8 +9,8 @@ const PageContact = () => {
             <Image
                 src='/images/contact.png'
                 alt='foto'
-                width={100}
-                height={200}
+                width={1000}
+                height={2000}
                 className={styles.img}
             />
         </div>
