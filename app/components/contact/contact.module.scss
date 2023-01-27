@@ -1,9 +1,9 @@
 .contact {
-	@apply container mt-5 justify-center gap-5 md:flex;
+	@apply container mt-5 justify-center gap-5  md:flex;
 	.mainimg {
-		@apply md:w-1/3;
+		@apply md:w-[40%];
 		.img {
-			@apply w-full;
+			@apply h-full;
 		}
 	}
 	.main {
