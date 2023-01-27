@@ -1,0 +1,24 @@
+.contact {
+	@apply mt-5 justify-center gap-5 md:flex;
+	.mainfoto {
+		@apply md:w-1/3;
+		.img {
+			@apply w-full;
+		}
+	}
+	.main {
+		@apply flex-col justify-between md:flex md:w-1/2;
+		.h {
+			@apply m-3 text-5xl font-medium;
+		}
+		.text {
+			@apply w-3/4 text-justify;
+		}
+		.write {
+			@apply flex h-32 w-32 items-center justify-center rounded-[50%] border-[1px] text-center text-lg;
+		}
+		.boxmail {
+			@apply items-end justify-between md:flex;
+		}
+	}
+}
