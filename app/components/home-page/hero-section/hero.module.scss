@@ -16,7 +16,7 @@
 }
 
 .title_mobile {
-	@apply flex flex-col text-6xl sm:text-8xl xmd:hidden;
+	@apply flex flex-col font-Helvetica text-6xl sm:text-8xl xmd:hidden;
 
 	& > span:nth-child(1) {
 		@apply text-xs sm:translate-x-1 md:translate-x-3;
