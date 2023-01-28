@@ -29,6 +29,9 @@ module.exports = {
 				pink: '#F14F94',
 				lightgray: '#4B4B4B',
 			},
+			borderStyle: {
+				solid: 'solid',
+			},
 		},
 	},
 	plugins: [
@@ -37,6 +40,14 @@ module.exports = {
 				// '.slider-container': {
 				// 	marginLeft: (100 % -theme('screens.md')) / 2 + '40px',
 				// },
+				'.border-title': {
+					borderBottom: theme('borderWidth.DEFAULT'),
+					borderColor: theme('borderColor.DEFAULT'),
+					borderStyle: theme('borderStyle.solid'),
+					paddingBottom: theme('spacing.7'),
+					fontSize: '2rem',
+					fontWeight: theme('fontWeight.bold'),
+				},
 			});
 		}),
 	],

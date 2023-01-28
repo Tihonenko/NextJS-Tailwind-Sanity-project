@@ -1,4 +1,4 @@
-import { Hero, News } from '@components/home-page/';
+import { Hero, NewModel, News } from '@components/home-page/';
 import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
@@ -6,6 +6,7 @@ const Home: NextPage = () => {
 		<>
 			<Hero />
 			<News />
+			<NewModel />
 		</>
 	);
 };
