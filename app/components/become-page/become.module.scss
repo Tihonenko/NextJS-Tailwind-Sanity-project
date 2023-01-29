@@ -5,6 +5,9 @@
 	100% {
 		transform: translateX(-100%);
 	}
+	0% {
+		transform: translateX(0);
+	}
 }
 .marquee_box {
 	@apply flex w-full items-center overflow-hidden;
