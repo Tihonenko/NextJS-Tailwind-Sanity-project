@@ -1,5 +1,5 @@
 import styles from './become.module.scss';
-import { Inputs, inputs } from './input.data';
+import { inputs } from './input.data';
 import Input from './input/Input';
 
 const Form = () => {
