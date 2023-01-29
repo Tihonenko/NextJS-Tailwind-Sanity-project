@@ -6,7 +6,7 @@
 		transform: translateX(-100%);
 	}
 }
-.become_hero {
+.marquee_box {
 	@apply relative flex h-32 w-full items-center overflow-hidden;
 	.marquee {
 		@apply w-full whitespace-nowrap text-[11.525vw] text-slate-300;
