@@ -1,6 +1,4 @@
 import Layout from '@components/layout/Layout';
-
-
 import HeroBecome from "@components/become-page/becomeHero"
 
 

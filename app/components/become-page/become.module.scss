@@ -7,12 +7,12 @@
 	}
 }
 .marquee_box {
-	@apply relative flex h-32 w-full items-center overflow-hidden;
+	@apply flex w-full items-center overflow-hidden;
 	.marquee {
-		@apply w-full whitespace-nowrap text-[11.525vw] text-slate-300;
-		animation: marquee 4s infinite linear;
+		@apply w-full  whitespace-nowrap text-[5rem] text-slate-300;
+		//animation: marquee 4s infinite linear;
 		&:after {
-			content: ' BECOME A MODEL BECOME A MODEL';
+			content: 'BECOME A MODEL BECOME A MODEL';
 		}
 	}
 }
