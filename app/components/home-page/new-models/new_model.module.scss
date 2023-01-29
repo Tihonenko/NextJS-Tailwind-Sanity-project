@@ -1,0 +1,52 @@
+.content {
+	@apply container mt-[4.375rem] xmd:mt-[8.75rem];
+}
+
+.header {
+	@apply border-title;
+}
+
+.content_main {
+	@apply mt-7 flex flex-col items-center gap-7 xmd:flex-row xmd:items-stretch lg:gap-7;
+}
+
+.left_img {
+	@apply w-full xmd:w-5/12;
+}
+
+.center {
+	@apply flex flex-col justify-between xmd:w-5/12;
+	&_info {
+		@apply flex flex-col gap-4;
+
+		& > h3 {
+			@apply font-Inter text-2xl font-semibold uppercase xmd:text-lg;
+		}
+
+		& > p {
+			@apply font-Inter text-sm sm:text-xs xmd:w-10/12;
+		}
+
+		& > a {
+			& > img {
+				@apply rounded-full border p-3;
+
+				&:hover {
+					@apply border-pink;
+				}
+			}
+		}
+	}
+
+	&_img {
+		@apply hidden  xmd:flex xmd:w-1/2;
+	}
+}
+
+.right {
+	@apply flex w-2/12 flex-col items-end justify-between;
+
+	&_img {
+		@apply hidden xmd:block;
+	}
+}

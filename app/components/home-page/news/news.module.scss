@@ -3,7 +3,7 @@
 }
 
 .title {
-	@apply font-Helvetica text-[2rem] font-bold;
+	@apply font-Helvetica;
 }
 
 .slider {
@@ -11,7 +11,7 @@
 }
 
 .header {
-	@apply container items-center border-b pb-7 md:flex md:justify-between;
+	@apply container  border-title md:flex md:justify-between;
 }
 
 .slide_navigation {
