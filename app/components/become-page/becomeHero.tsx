@@ -3,9 +3,9 @@ import styles from './become.module.scss'
 const HeroBecome = () => {
   return (
     <section className={styles.marquee_box}>
-      <p className={styles.marquee}>
+      <h1 className={styles.marquee}>
         BECOME A MODEL BECOME A MODEL
-      </p>
+      </h1>
     </section>
   )
 }
