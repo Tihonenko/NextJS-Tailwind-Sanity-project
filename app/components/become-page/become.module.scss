@@ -13,7 +13,7 @@
 	@apply flex w-full items-center overflow-hidden;
 	.marquee {
 		@apply w-full  whitespace-nowrap text-[4.75rem] text-slate-300;
-		//animation: marquee 4s infinite linear;
+		animation: marquee 4s infinite linear;
 		&:after {
 			content: ' BECOME A MODEL BECOME A MODEL';
 		}
