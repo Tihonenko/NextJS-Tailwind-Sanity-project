@@ -1,0 +1,18 @@
+@keyframes marquee {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+.become_hero {
+	@apply relative flex h-32 w-full items-center overflow-hidden;
+	.marquee {
+		@apply w-full whitespace-nowrap text-[11.525vw] text-slate-300;
+		animation: marquee 4s infinite linear;
+		&:after {
+			content: ' BECOME A MODEL BECOME A MODEL';
+		}
+	}
+}
