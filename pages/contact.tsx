@@ -1,11 +1,12 @@
-import PageContact from "@components/contact/pageContact"
+import PageContact from '@components/contact/pageContact';
+import Layout from '@components/layout/Layout';
 
 const contact = () => {
-  return (
-    <>
-        <PageContact/>
-    </>
-  )
-}
+	return (
+		<Layout title='Контакты'>
+			<PageContact />
+		</Layout>
+	);
+};
 
-export default contact
+export default contact;
