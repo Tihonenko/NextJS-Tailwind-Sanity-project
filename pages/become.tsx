@@ -1,7 +1,7 @@
 import HeroBecome from '@components/become-page/becomeHero';
 import Form from '@components/become-page/form';
 import Layout from '@components/layout/Layout';
-import { NextPage } from 'next';
+import type { NextPage } from 'next';
 
 const become: NextPage = () => {
 	return (
