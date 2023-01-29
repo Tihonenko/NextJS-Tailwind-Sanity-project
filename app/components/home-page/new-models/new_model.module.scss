@@ -7,7 +7,11 @@
 }
 
 .content_main {
-	@apply mt-7 flex flex-col items-center gap-7 xmd:flex-row xmd:items-stretch lg:gap-7;
+	@apply mt-7 flex flex-col  gap-7 xmd:flex-row xmd:items-stretch lg:gap-7;
+
+	// & .round-btn_btn {
+	// 	@apply self-center;
+	// }
 }
 
 .left_img {
@@ -43,10 +47,42 @@
 	}
 }
 
+.center_mobile {
+	@apply flex flex-row justify-between gap-5;
+
+	&_left_img {
+		@apply flex w-1/2;
+	}
+
+	&_right_img {
+		@apply flex w-1/2;
+	}
+}
+
 .right {
 	@apply flex w-2/12 flex-col items-end justify-between;
 
 	&_img {
 		@apply hidden xmd:block;
+	}
+}
+
+.btn_wrapper {
+	@apply flex gap-11 sm:justify-center;
+
+	& > a {
+		@apply flex;
+	}
+
+	.instagram_btn {
+		@apply self-start;
+
+		& > img {
+			@apply rounded-full border p-3;
+
+			&:hover {
+				@apply border-pink;
+			}
+		}
 	}
 }
