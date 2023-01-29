@@ -25,7 +25,7 @@ module.exports = {
 				Helvetica: 'var(--font-helvetica)',
 			},
 			colors: {
-				white: '#ECECEC',
+				lightwhite: '#ECECEC',
 				pink: '#F14F94',
 				lightgray: '#4B4B4B',
 			},
