@@ -1,15 +1,15 @@
-import Layout from '@components/layout/Layout';
-import HeroBecome from "@components/become-page/becomeHero"
+import HeroBecome from '@components/become-page/becomeHero';
 import Form from '@components/become-page/form';
+import Layout from '@components/layout/Layout';
+import { NextPage } from 'next';
 
+const become: NextPage = () => {
+	return (
+		<Layout title='Стать моделью'>
+			<HeroBecome />
+			<Form />
+		</Layout>
+	);
+};
 
-const become = () => {
-  return (
-    <Layout title='Стать моделью'>
-        <HeroBecome/>
-        <Form/>
-    </Layout>
-  )
-}
-
-export default become
+export default become;
