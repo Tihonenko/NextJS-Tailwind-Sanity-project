@@ -3,7 +3,7 @@ import styles from './about.module.scss';
 const HeroAbout = () =>{
     return(
         <section className={styles.hero}>
-        <div className={styles.h}>О НАС</div>
+        <h1 className={styles.h}>О НАС</h1>
         <div className={styles.text}>
             <div className={styles.div1}>Международное модельное агенство , ориентированное на поиск, развитие
                 и плэйсмент молодых начинающих моделей в лучшие модельные агенства Европы,

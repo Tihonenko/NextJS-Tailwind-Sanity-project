@@ -6,9 +6,7 @@ import styles from './about.module.scss'
 const WorkAbout=()=>{
     return(
         <section className={styles.work}>
-        <div className={styles.h}>
-                Наша работа это 
-        </div>
+        <h1 className={styles.h}>Наша работа это</h1>
         <div className={styles.line}></div>
         <div className={styles.box}>
         
@@ -16,7 +14,8 @@ const WorkAbout=()=>{
 						<WorkItem item={item} key={item.link} />
 					))}
             </div>
-            </section>
+
+        </section>
     )
 }
 

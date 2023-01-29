@@ -24,7 +24,7 @@ const PageContact = () => {
             </div>
             <div className={styles.write}>HАПИСАТЬ НАМ</div>
             <div className={styles.boxmail}>
-                <div className={styles.mail}>CHERIEMODELS@GMAIL.COM</div>
+                <p className={styles.mail}>CHERIEMODELS@GMAIL.COM</p>
                 <div className={styles.img}>
                 <Image
                     src='/images/contact.png'
