@@ -12,7 +12,7 @@ const Input: FC<IInputProps> = ({ item }) => {
 	return (
 		<div className={styles.input}>
 			<input type='text' name={item.name}/>
-			<label >{item.text}</label>
+			<label htmlFor={item.name}>{item.text}</label>
 		</div>
 	);
 };

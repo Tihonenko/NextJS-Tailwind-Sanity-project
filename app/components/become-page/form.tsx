@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import Image from 'next/image';
 
 import { inputs } from './input.data';
 import Input from './input/Input';
@@ -22,9 +23,24 @@ const Form:FC = () => {
 						<Input item={item} key={item.name} />
 					))}
 				</fieldset>
-				<ImgInput/>
+				<fieldset name='imginputs' className={styles.img_inputs}>
+
+				</fieldset>
+				<fieldset className={styles.check}>
+					<input type='checkbox' name='check'></input>
+					<label htmlFor='check'>Согласие на обработку персональных данных</label>
+				</fieldset>
+				
+				<button className={styles.submit}>Отправить</button>
 			</form>
-			<div className={styles.div_img}></div>
+			<div className={styles.div_img}>
+				<Image src='/images/become.jpg'
+				alt='img model'
+				width={1000}
+				height={2000}
+				className={styles.img}
+				/>
+			</div>
 		</section>
 	);
 };

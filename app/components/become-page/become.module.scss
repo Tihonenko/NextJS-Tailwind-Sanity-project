@@ -13,14 +13,14 @@
 	@apply flex w-full items-center overflow-hidden;
 	.marquee {
 		@apply w-full  whitespace-nowrap text-[4.75rem] text-slate-300;
-		animation: marquee 4s infinite linear;
+		animation: marquee 5s infinite linear;
 		&:after {
 			content: ' BECOME A MODEL BECOME A MODEL';
 		}
 	}
 }
 .form_section {
-	@apply container m-auto flex w-[80%] bg-slate-50;
+	@apply container m-auto flex w-[80%] justify-between bg-slate-50 p-5;
 	.form {
 		@apply w-1/2;
 		.requirements {
@@ -56,5 +56,26 @@
 				}
 			}
 		}
+		.check {
+			@apply my-5;
+			input {
+				@apply mr-4;
+			}
+		}
+		.submit {
+			@apply h-10 w-48 rounded-3xl border-2 text-xl;
+		}
+	}
+	.div_img {
+		@apply w-1/3;
+		.img {
+			@apply w-full;
+		}
+	}
+}
+.div_after {
+	@apply m-auto mt-10 w-1/2;
+	p {
+		@apply text-justify;
 	}
 }
