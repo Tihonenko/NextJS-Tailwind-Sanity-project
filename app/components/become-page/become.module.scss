@@ -19,3 +19,42 @@
 		}
 	}
 }
+.form_section {
+	@apply container m-auto flex w-[80%] bg-slate-50;
+	.form {
+		@apply w-1/2;
+		.requirements {
+			legend {
+				@apply text-xl font-bold;
+			}
+			div {
+				@apply mb-6 flex gap-5;
+				p {
+					@apply mt-3 text-slate-500;
+					span {
+						@apply text-black;
+					}
+				}
+			}
+		}
+		.input_box {
+			@apply grid-cols-2	justify-between gap-8 md:grid;
+			.input {
+				@apply relative  border-b-2;
+				input {
+					@apply relative z-10 w-full bg-inherit;
+					&:focus {
+						outline: none;
+					}
+					&:focus ~ label {
+						@apply left-1 top-[-20px];
+					}
+				}
+				label {
+					@apply absolute top-0 left-2 text-slate-500;
+					transition: all 0.3s linear;
+				}
+			}
+		}
+	}
+}

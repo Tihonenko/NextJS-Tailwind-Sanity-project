@@ -1,8 +1,11 @@
-import { Postdata } from './faq.data';
-import styles from './faq.module.scss';
-import Post from './post/post';
+import { FC } from 'react';
 
-const Posts = () => {
+import Post from './post/post';
+import { Postdata } from './faq.data';
+
+import styles from './faq.module.scss';
+
+const Posts:FC = () => {
 	return (
 		<section className={styles.posts}>
 			{Postdata.map((post) => (

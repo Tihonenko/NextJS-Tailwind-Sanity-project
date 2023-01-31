@@ -11,8 +11,8 @@ interface IInputProps {
 const Input: FC<IInputProps> = ({ item }) => {
 	return (
 		<div className={styles.input}>
-			<input type='text' name={item.name} />
-			<label>{item.text}</label>
+			<input type='text' name={item.name}/>
+			<label >{item.text}</label>
 		</div>
 	);
 };
