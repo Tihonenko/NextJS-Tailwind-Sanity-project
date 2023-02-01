@@ -13,9 +13,81 @@
 	@apply flex w-full items-center overflow-hidden;
 	.marquee {
 		@apply w-full  whitespace-nowrap text-[4.75rem] text-slate-300;
-		animation: marquee 4s infinite linear;
+		animation: marquee 5s infinite linear;
 		&:after {
 			content: ' BECOME A MODEL BECOME A MODEL';
 		}
+	}
+}
+.form_section {
+	@apply container m-auto w-[80%] flex-row-reverse justify-between bg-slate-50 p-5 md:flex;
+	.form {
+		@apply md:w-1/2;
+		.requirements {
+			legend {
+				@apply text-xl font-bold;
+			}
+			div {
+				@apply mb-6 gap-5 md:flex;
+				p {
+					@apply mt-3 text-slate-500;
+					span {
+						@apply text-black;
+					}
+				}
+			}
+		}
+		.input_box {
+			@apply grid-cols-2	justify-between gap-5 md:grid;
+			.input {
+				@apply relative mt-5 border-b-2 md:mt-0;
+				input {
+					@apply relative z-10 w-full bg-inherit;
+					&:focus {
+						outline: none;
+					}
+					&:focus ~ label {
+						@apply left-1 top-[-20px];
+					}
+				}
+				label {
+					@apply absolute top-0 left-2 text-slate-500;
+					transition: all 0.3s linear;
+				}
+			}
+		}
+		.img_inputs {
+			@apply my-5;
+			h2 {
+				@apply mx-2 my-3 text-xl;
+			}
+			.img_input {
+				@apply relative mx-2 block aspect-[2/3] h-32 cursor-pointer rounded-xl border-2 border-dotted border-slate-500 md:inline-block;
+				.img {
+					@apply absolute top-12 left-6;
+				}
+			}
+		}
+		.check {
+			@apply my-5;
+			input {
+				@apply mr-4;
+			}
+		}
+		.submit {
+			@apply h-10 w-48 rounded-3xl border-2 text-xl;
+		}
+	}
+	.div_img {
+		@apply md:w-1/3;
+		.img {
+			@apply w-full;
+		}
+	}
+}
+.div_after {
+	@apply container m-auto mt-10 md:w-1/2;
+	p {
+		@apply text-justify;
 	}
 }

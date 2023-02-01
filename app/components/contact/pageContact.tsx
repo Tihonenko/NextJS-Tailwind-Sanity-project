@@ -1,9 +1,10 @@
+import React, { FC } from 'react';
+
 import Image from 'next/image';
-import React from 'react';
 
 import styles from './contact.module.scss';
 
-const PageContact = () => {
+const PageContact:FC = () => {
 	return (
 		<section className={styles.contact}>
 			<div className={styles.mainimg}>

@@ -1,6 +1,8 @@
+import { FC } from 'react'
+
 import styles from './faq.module.scss'
 
-const HeroFAQ = () => {
+const HeroFAQ:FC = () => {
   return (
     <section className={styles.hero}>
         <div className={styles.h}>FAQ</div>

@@ -1,6 +1,8 @@
+import { FC } from 'react';
+
 import styles from './about.module.scss';
 
-const HeroAbout = () => {
+const HeroAbout:FC = () => {
 	return (
 		<section className={styles.hero}>
 			<h2 className={styles.h}>О НАС</h2>

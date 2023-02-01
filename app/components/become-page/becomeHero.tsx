@@ -1,6 +1,8 @@
+import { FC } from 'react'
+
 import styles from './become.module.scss'
 
-const HeroBecome = () => {
+const HeroBecome:FC = () => {
   return (
     <section className={styles.marquee_box}>
       <h1 className={styles.marquee}>
