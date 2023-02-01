@@ -10,7 +10,7 @@ import styles from './become.module.scss';
 const Form:FC = () => {
 	return (
 		<section className={styles.form_section}>
-			<div className={styles.div_img}>
+			<div className={styles.div_img1}>
 				<Image src='/images/become.jpg'
 				alt='img model'
 				width={1000}
@@ -19,6 +19,14 @@ const Form:FC = () => {
 				/>
 			</div>
 			<form className={styles.form}>
+			<div className={styles.div_img2}>
+				<Image src='/images/become.jpg'
+				alt='img model'
+				width={1000}
+				height={2000}
+				className={styles.img}
+				/>
+			</div>
 				<fieldset name='requirements' className={styles.requirements}>
 					<legend>Требования</legend>
 					<div>
@@ -31,8 +39,9 @@ const Form:FC = () => {
 						<Input item={item} key={item.name} />
 					))}
 				</fieldset>
+				<h2>Фото</h2>
 				<fieldset name='imginputs' className={styles.img_inputs}>
-					<h2>Фото</h2>
+					
 					<ImgInput/>
 					<ImgInput/>
 					<ImgInput/>
