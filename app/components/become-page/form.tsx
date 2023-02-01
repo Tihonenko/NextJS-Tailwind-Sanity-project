@@ -10,6 +10,14 @@ import styles from './become.module.scss';
 const Form:FC = () => {
 	return (
 		<section className={styles.form_section}>
+			<div className={styles.div_img}>
+				<Image src='/images/become.jpg'
+				alt='img model'
+				width={1000}
+				height={2000}
+				className={styles.img}
+				/>
+			</div>
 			<form className={styles.form}>
 				<fieldset name='requirements' className={styles.requirements}>
 					<legend>Требования</legend>
@@ -24,7 +32,11 @@ const Form:FC = () => {
 					))}
 				</fieldset>
 				<fieldset name='imginputs' className={styles.img_inputs}>
-
+					<h2>Фото</h2>
+					<ImgInput/>
+					<ImgInput/>
+					<ImgInput/>
+					<ImgInput/>
 				</fieldset>
 				<fieldset className={styles.check}>
 					<input type='checkbox' name='check'></input>
@@ -33,14 +45,7 @@ const Form:FC = () => {
 				
 				<button className={styles.submit}>Отправить</button>
 			</form>
-			<div className={styles.div_img}>
-				<Image src='/images/become.jpg'
-				alt='img model'
-				width={1000}
-				height={2000}
-				className={styles.img}
-				/>
-			</div>
+			
 		</section>
 	);
 };
