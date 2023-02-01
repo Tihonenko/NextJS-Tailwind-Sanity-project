@@ -1,10 +1,10 @@
+import HeroAbout from '@components/about/heroAbout';
+import PhotoAbout from '@components/about/photo';
+import WorkAbout from '@components/about/work';
 import Layout from '@components/layout/Layout';
+import type { NextPage } from 'next';
 
-import HeroAbout from '../app/components/about/heroAbout';
-import PhotoAbout from '../app/components/about/photo';
-import WorkAbout from '../app/components/about/work';
-
-const About = () => {
+const About: NextPage = () => {
 	return (
 		<Layout title='Про агенство'>
 			<HeroAbout />

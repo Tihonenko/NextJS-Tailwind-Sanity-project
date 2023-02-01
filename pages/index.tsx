@@ -7,6 +7,7 @@ const Home: NextPage = () => {
 		<Layout title='Model Public'>
 			<Hero />
 			<News />
+			<NewModel />
 		</Layout>
 	);
 };
