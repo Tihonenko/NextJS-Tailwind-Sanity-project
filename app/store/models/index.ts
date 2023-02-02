@@ -2,7 +2,7 @@ import { models } from '@data/model.data';
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 
-import { IInitialState } from '../types';
+import { IInitialState } from '../../types/types';
 
 const initialState: IInitialState = {
 	items: models,

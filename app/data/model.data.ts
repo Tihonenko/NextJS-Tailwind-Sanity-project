@@ -1,4 +1,4 @@
-import { IModelItem } from '@app/store/types';
+import { IModelItem } from '@app/types/types';
 
 export const models: IModelItem[] = [
 	{

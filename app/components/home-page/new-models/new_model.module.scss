@@ -15,7 +15,7 @@
 }
 
 .left_img {
-	@apply w-full xmd:w-5/12;
+	@apply w-full  xmd:w-1/2;
 }
 
 .center {
@@ -51,11 +51,11 @@
 	@apply flex flex-row justify-between gap-5;
 
 	&_left_img {
-		@apply flex w-1/2;
+		@apply flex w-5/12 sm:w-1/2;
 	}
 
 	&_right_img {
-		@apply flex w-1/2;
+		@apply flex w-5/12 sm:w-1/2;
 	}
 }
 

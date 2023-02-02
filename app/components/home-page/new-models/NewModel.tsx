@@ -1,16 +1,21 @@
+import { client, urlFor } from '@app/lib/sanity.client';
 import { getOne } from '@app/store/models';
+import { IModelItem } from '@app/types/types';
 import { RoundBtn } from '@components/UI/';
 import { social } from '@data/social.data';
 import { useAppDispatch, useAppSelector } from '@hooks/hooksRedux';
 import useMediaQuery from '@hooks/useMediaQuery';
+import { groq } from 'next-sanity';
 import Link from 'next/link';
 import { FC } from 'react';
 
 import styles from './new_model.module.scss';
 
-const NewModel: FC = () => {
-	const items = useAppSelector((state) => state.model.items[0]);
+interface IModelProps {
+	model: IModelItem;
+}
 
+const NewModel: FC<IModelProps> = ({ model }) => {
 	const isAboveMobileQuery = useMediaQuery('(min-width: 834px)');
 	const isAboveSmallQuery = useMediaQuery('(min-width: 640px)');
 
@@ -22,27 +27,27 @@ const NewModel: FC = () => {
 					<>
 						<img
 							className={styles.left_img}
-							src={items.image[0]}
+							src={urlFor(model.image[0]).url()}
 							alt='main'
 						/>
 						<div className={styles.center}>
 							<div className={styles.center_info}>
-								<h3>{items.name}</h3>
-								<p>{items.infoText}</p>
-								<Link href={social[1].link}>
+								<h3>{model.meta_title}</h3>
+								<p>{model.description}</p>
+								<Link href={model.instagram_url}>
 									<img src={social[1].image} alt='instagram' />
 								</Link>
 							</div>
 							<img
 								className={styles.center_img}
-								src={items.image[1]}
+								src={urlFor(model.image[1]).url()}
 								alt='second'
 							/>
 						</div>
 						<div className={styles.right}>
 							<img
 								className={styles.right_img}
-								src={items.image[2]}
+								src={urlFor(model.image[2]).url()}
 								alt='third'
 							/>
 							<RoundBtn link=''>
@@ -55,26 +60,26 @@ const NewModel: FC = () => {
 					<>
 						<img
 							className={styles.left_img}
-							src={items.image[0]}
+							src={urlFor(model.image[0]).url()}
 							alt='main'
 						/>
 						<div className={styles.center_mobile}>
 							<img
 								className={styles.center_mobile_right_img}
-								src={items.image[1]}
+								src={urlFor(model.image[1]).url()}
 								alt='second'
 							/>
 							<img
 								className={styles.center_mobile_left_img}
-								src={items.image[2]}
+								src={urlFor(model.image[2]).url()}
 								alt='third'
 							/>
 						</div>
 						{isAboveSmallQuery ? (
 							<>
 								<div className={styles.center_info}>
-									<h3>{items.name}</h3>
-									<p>{items.infoText}</p>
+									<h3>{model.meta_title}</h3>
+									<p>{model.description}</p>
 									<Link href={social[1].link}>
 										<img src={social[1].image} alt='instagram' />
 									</Link>
@@ -89,8 +94,8 @@ const NewModel: FC = () => {
 						) : (
 							<>
 								<div className={styles.center_info}>
-									<h3>{items.name}</h3>
-									<p>{items.infoText}</p>
+									<h3>{model.meta_title}</h3>
+									<p>{model.description}</p>
 								</div>
 								<div className={styles.btn_wrapper}>
 									<Link
