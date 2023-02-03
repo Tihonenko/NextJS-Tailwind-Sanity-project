@@ -1,33 +1,34 @@
 import { client } from '@app/lib/sanity.client';
-import { IModelItem } from '@app/types/types';
+import { INewModelItem } from '@app/types/types';
 import { Hero, NewModel, News } from '@components/home-page/';
 import Layout from '@components/layout/Layout';
-import type { NextPage } from 'next';
+import type { GetStaticProps, NextPage } from 'next';
 import { groq } from 'next-sanity';
 
 interface IHomeProps {
-	model: IModelItem[];
+	newModel: INewModelItem[];
 }
 
-const Home: NextPage<IHomeProps> = ({ model }) => {
+const Home: NextPage<IHomeProps> = ({ newModel }) => {
 	return (
 		<Layout title='Model Public'>
 			<Hero />
 			<News />
-			<NewModel model={model[0]} />
+			<NewModel model={newModel[0]} />
 		</Layout>
 	);
 };
 
 export default Home;
-const query = groq`*[_type == "model"]`;
 
-export async function getStaticProps() {
-	const model = await client.fetch(query);
+const query = groq`*[_type == "model" && model_ref._ref in *[_type=="model_ref" && name_ref == "New Model"]._id ]`;
+
+export const getStaticProps: GetStaticProps = async () => {
+	const newModel = await client.fetch(query);
 
 	return {
 		props: {
-			model,
+			newModel,
 		},
 	};
-}
+};

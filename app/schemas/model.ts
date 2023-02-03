@@ -6,6 +6,16 @@ export default defineType({
 	type: 'document',
 	fields: [
 		defineField({
+			name: 'model_ref',
+			title: 'Model Reference',
+			type: 'reference',
+			to: [
+				{
+					type: 'model_ref',
+				},
+			],
+		}),
+		defineField({
 			name: 'meta_title',
 			title: 'Meta Title',
 			type: 'string',

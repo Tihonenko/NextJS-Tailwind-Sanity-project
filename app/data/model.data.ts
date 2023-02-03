@@ -1,6 +1,6 @@
-import { IModelItem } from '@app/types/types';
+import { INewModelItem } from '@app/types/types';
 
-export const models: IModelItem[] = [
+export const models: INewModelItem[] = [
 	{
 		id: 1,
 		name: 'Marianna Korzhimanova ',

@@ -1,6 +1,6 @@
 import { client, urlFor } from '@app/lib/sanity.client';
 import { getOne } from '@app/store/models';
-import { IModelItem } from '@app/types/types';
+import { INewModelItem } from '@app/types/types';
 import { RoundBtn } from '@components/UI/';
 import { social } from '@data/social.data';
 import { useAppDispatch, useAppSelector } from '@hooks/hooksRedux';
@@ -12,7 +12,7 @@ import { FC } from 'react';
 import styles from './new_model.module.scss';
 
 interface IModelProps {
-	model: IModelItem;
+	model: INewModelItem;
 }
 
 const NewModel: FC<IModelProps> = ({ model }) => {
@@ -27,7 +27,7 @@ const NewModel: FC<IModelProps> = ({ model }) => {
 					<>
 						<img
 							className={styles.left_img}
-							src={urlFor(model.image[0]).url()}
+							src={urlFor(model.main_image[0]).url()}
 							alt='main'
 						/>
 						<div className={styles.center}>
@@ -40,14 +40,14 @@ const NewModel: FC<IModelProps> = ({ model }) => {
 							</div>
 							<img
 								className={styles.center_img}
-								src={urlFor(model.image[1]).url()}
+								src={urlFor(model.main_image[1]).url()}
 								alt='second'
 							/>
 						</div>
 						<div className={styles.right}>
 							<img
 								className={styles.right_img}
-								src={urlFor(model.image[2]).url()}
+								src={urlFor(model.main_image[2]).url()}
 								alt='third'
 							/>
 							<RoundBtn link=''>
@@ -60,18 +60,18 @@ const NewModel: FC<IModelProps> = ({ model }) => {
 					<>
 						<img
 							className={styles.left_img}
-							src={urlFor(model.image[0]).url()}
+							src={urlFor(model.main_image[0]).url()}
 							alt='main'
 						/>
 						<div className={styles.center_mobile}>
 							<img
 								className={styles.center_mobile_right_img}
-								src={urlFor(model.image[1]).url()}
+								src={urlFor(model.main_image[1]).url()}
 								alt='second'
 							/>
 							<img
 								className={styles.center_mobile_left_img}
-								src={urlFor(model.image[2]).url()}
+								src={urlFor(model.main_image[2]).url()}
 								alt='third'
 							/>
 						</div>
