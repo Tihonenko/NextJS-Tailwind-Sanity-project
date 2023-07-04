@@ -1,9 +1,12 @@
-import { Work } from "./work.data"
-import WorkItem from "./work-item/workItem"
+import { FC } from 'react'
+
+import { Work } from './work.data'
+import WorkItem from './work-item/workItem'
+
 import styles from './about.module.scss'
 
 
-const WorkAbout=()=>{
+const WorkAbout:FC=()=>{
     return(
         <section className={styles.work}>
         <h1 className={styles.h}>Наша работа это</h1>

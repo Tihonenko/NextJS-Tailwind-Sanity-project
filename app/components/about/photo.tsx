@@ -1,7 +1,10 @@
+import { FC } from 'react';
+
 import Image from 'next/image';
+
 import styles from './about.module.scss'
 
-const PhotoAbout = () =>{
+const PhotoAbout:FC = () =>{
     return(
         <section className={styles.photo}>
                 <Image src='/images/about.png'

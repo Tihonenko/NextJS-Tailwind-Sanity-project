@@ -5,7 +5,7 @@
 	}
 }
 .posts {
-	@apply container mt-5 grid  gap-x-3 md:grid-cols-2 lg:grid-cols-3;
+	@apply container mt-5 grid md:grid-cols-2 md:gap-x-5;
 	.post {
 		@apply border-y-[1px] border-slate-300;
 		.line {
@@ -21,6 +21,7 @@
 				}
 				.div2 {
 					transform: rotate(90deg);
+					transition: all 100ms linear;
 				}
 			}
 		}
