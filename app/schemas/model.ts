@@ -14,6 +14,7 @@ export default defineType({
 					type: 'model_ref',
 				},
 			],
+			validation: (Rule) => Rule.required(),
 		}),
 		defineField({
 			name: 'meta_title',
@@ -77,7 +78,7 @@ export default defineType({
 							type: 'string',
 							title: 'Caption',
 							options: {
-								isHighlighted: true, // <-- make this field easily accessible
+								isHighlighted: true, 
 							},
 						},
 						{

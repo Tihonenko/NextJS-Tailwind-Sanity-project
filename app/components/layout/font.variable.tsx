@@ -1,6 +1,5 @@
 import { Inter } from '@next/font/google';
 import localFont from '@next/font/local';
-import { transferableAbortController } from 'util';
 
 export const inter = Inter({
 	variable: '--font-inter',

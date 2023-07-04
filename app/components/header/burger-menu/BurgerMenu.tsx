@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -54,9 +54,9 @@ const BurgerMenu = () => {
 									...itemVariant.open,
 									transition: {
 										type: 'spring',
-										duration: 1,
-										stiffness: 33,
-										delay: i + 0.2,
+										duration: 0.1,
+										stiffness: 20,
+										delay: i / 2 + 0.5,
 									},
 								},
 

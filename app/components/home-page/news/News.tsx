@@ -1,16 +1,11 @@
-import SlideNavigation from '@UI/slide-navigation/SlideNavigation';
 import SlideNext from '@UI/slide-navigation/SlideNext';
 import SlidePrev from '@UI/slide-navigation/SlidePrev';
-import { FC, useRef } from 'react';
-import { useSwiper } from 'swiper/react';
+import { FC } from 'react';
 
 import Slider from './Slider/Slider';
 import styles from './news.module.scss';
 
 const News: FC = () => {
-	const navigationPrev = useRef<null | HTMLButtonElement>(null);
-	const swiper = useSwiper();
-
 	return (
 		<section className={styles.news}>
 			<div className={styles.header}>

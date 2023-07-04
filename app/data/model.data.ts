@@ -1,4 +1,4 @@
-import { INewModelItem } from '@app/types/types';
+import { INewModelItem } from '@app/types/model.interface';
 
 export const models: INewModelItem[] = [
 	{

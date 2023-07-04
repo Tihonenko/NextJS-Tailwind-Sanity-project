@@ -1,11 +1,8 @@
-import { client, urlFor } from '@app/lib/sanity.client';
-import { getOne } from '@app/store/models';
-import { INewModelItem } from '@app/types/types';
+import { urlFor } from '@app/lib/sanity.client';
+import { INewModelItem } from '@app/types/model.interface';
 import { RoundBtn } from '@components/UI/';
 import { social } from '@data/social.data';
-import { useAppDispatch, useAppSelector } from '@hooks/hooksRedux';
 import useMediaQuery from '@hooks/useMediaQuery';
-import { groq } from 'next-sanity';
 import Link from 'next/link';
 import { FC } from 'react';
 
